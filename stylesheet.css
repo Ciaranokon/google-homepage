@@ -1,8 +1,123 @@
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+#top {
+    margin: 0px;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    justify-items: flex-end;
-    
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 40px;
+    min-width: 220px;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+#nav-gmail {
+padding: 10px;
+}
+
+#nav-images {
+    padding: 10px;
+}
+#nav-products {
+    padding: 10px;
+}
+#nav-sign-in {
+    padding: 10px;
+}
+
+
+.main-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#google-logo {
+    max-width: 250px;
+}
+
+#searchbar-div {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 30px;
+    min-width: auto;
+}
+
+#searchbar-div:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#searchbar {
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    background: #ffffff;
+    min-width: 450px;
+}
+
+#buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-box-pack: unset;
+    appearance: none;
+}
+
+#google-button {
+    background-color: #f8f9fa;
+    color: #202124;
+    margin: 11px 4px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    box-decoration-break: unset;
+    border-radius: 5px;
+    border: none;
+}
+
+#lucky-button {
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+    color: #202124;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+#google-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f9fa,#f8f9fa);
+background-color: #f8f9fa;
+border: 1px solid #dadce0;
+color: #202124;
+}
+
+#lucky-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f9fa,#f8f9fa);
+background-color: #f8f9fa;
+border: 1px solid #dadce0;
+color: #202124;
+}
+
 

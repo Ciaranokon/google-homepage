@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="top"></div>
     <div class="navbar">
         <a id="nav-gmail" href="https://www.google.com/intl/no/gmail/about/">Gmail</a>
         <a id="nav-images" href="https://www.google.no/imghp?hl=no&tab=wi&ogbl">Images</a>
@@ -14,16 +15,18 @@
         <a id="nav-sign-in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Sign In</a>
     </div>
     
-    <h1>Google
-    </h1>
-
-
-
+    
+<div class="main-div">
+    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
     <form action="submit">
+        <div id="searchbar-div">
         <input id="searchbar" type="text" maxlength="2048" autocapitalize="off" autocomplete="off" aria-autocomplete="both">
-        <button>Search</button>
-        <button>I'm Feeling Lucky</button>
-
+    </div>
+        <div id="buttons-div">
+        <input type="submit" value="Google Search" id="google-button">
+        <input type="submit" value="I'm Feeling Lucky" id="lucky-button">
+    </div>
     </form>
+</div>
 </body>
 </html>
