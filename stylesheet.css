@@ -10,10 +10,9 @@ body {
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     position: relative;
-    padding-right: 30px;
-    padding-left: 30px;
     height: 40px;
     min-width: 220px;
     align-items: center;
@@ -50,7 +49,6 @@ color: black;
 }
 
 #nav-sign-in {
-    padding: 10px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -59,6 +57,7 @@ color: black;
     padding: 0 12px;
     line-height: 28px;
     border-radius: 3px;
+    margin-right: 20px;
 }
 
 
@@ -216,7 +215,7 @@ color: #202124;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
