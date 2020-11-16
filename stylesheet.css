@@ -2,6 +2,7 @@ body {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    font-size: 13px;
 }
 #top {
     margin: 0px;
@@ -17,40 +18,128 @@ body {
     min-width: 220px;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 10px;
 }
+
 
 #nav-gmail {
 padding: 10px;
+text-decoration: none;
+color: black;
+}
+
+#nav-gmail:hover {
+    text-decoration: underline;
 }
 
 #nav-images {
     padding: 10px;
+    text-decoration: none;
+    color: black;
 }
-#nav-products {
-    padding: 10px;
+#nav-images:hover {
+    text-decoration: underline;
 }
+#Layer_1 {
+    height: 16px;
+    width: 16px;
+    fill: #6f7377;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
 #nav-sign-in {
     padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    background-color: #4285f4;
+    padding: 0 12px;
+    line-height: 28px;
+    border-radius: 3px;
 }
+
+
 
 
 .main-div {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
 }
 
 #google-logo {
     max-width: 250px;
+    padding: 20px;
 }
+
+@media only screen and (max-width: 599px) {
+    #searchbar-div {
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        height: 44px;
+        width: auto;
+        min-width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #searchbar-div {
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        height: 44px;
+        width: auto;
+        min-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #searchbar-div {
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        height: 44px;
+        width: auto;
+        min-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
 
 #searchbar-div {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    height: 30px;
-    min-width: auto;
+    height: 44px;
+    width: auto;
+    min-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+}
+
+#search-icon {
+    height: 50%;
+    padding-left: 5px;
+    margin-top: 12px;
+    margin-left: 15px;
+    fill: #9aa0a6;
 }
 
 #searchbar-div:hover {
@@ -64,13 +153,16 @@ padding: 10px;
     padding-bottom: 5px;
     margin-left: 30px;
     background: #ffffff;
-    min-width: 450px;
+    width: 85%;
+    word-wrap: break-word;
+    font-size: 16px;
 }
 
 #buttons-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 2px;
 }
 
 input {
@@ -82,26 +174,29 @@ input {
 
 #google-button {
     background-color: #f8f9fa;
-    color: #202124;
-    margin: 11px 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 8px;
     height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     box-decoration-break: unset;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #f8f9fa;
 }
 
 #lucky-button {
-    margin: 11px 4px;
+    margin: 11px 8px;
     background-color: #f8f9fa;
-    color: #202124;
+    color: #3c4043;
+    font-size: 14px;
     height: 36px;
     min-width: 54px;
     text-align: center;
+    border-radius: 5px;
     cursor: pointer;
-    border: none;
+    border: 1px solid #f8f9fa;
 }
 
 #google-button:hover {
@@ -120,4 +215,46 @@ border: 1px solid #dadce0;
 color: #202124;
 }
 
+footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+#footer-1 {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+}
+p {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #70757a;
+}
+
+#footer-2 {
+    width: 100%;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    height: 40px;
+}
+
+
+
+.footer-links {
+    margin: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #70757a;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
 
